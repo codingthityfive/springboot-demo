@@ -1,0 +1,18 @@
+logging:
+  config: classpath:log4j2-dev.yml #生产环境使用prod
+
+spring:
+  profiles:
+    #表示所用配置文件为application-dev.yml,生产环境使用prod
+    active: dev
+  datasource:  #数据库配置
+
+
+mybatis:
+  configuration:
+     #配置项：开启下划线到驼峰的自动转换. 作用：将数据库字段根据驼峰规则自动注入到对象属性。
+     map-underscore-to-camel-case: true
+  #实体类所在包
+  type-aliases-package: com.sd.model
+  #mapper.xml所在位置
+  #mapper-locations: classpath*:mappers/*Mapper.xml
