@@ -1,7 +1,8 @@
 ### springboot脚手架
 
  基于gradle构建，主体框架为springboot2.0.2<br/>
- 项目未包含数据库表，只需要按照Account实体类去新建表，修改application-dev.yml数据库为你自己的数据库即可运行
+ 项目未包含数据库表，只需要按照Account实体类去新建表，修改application-dev.yml数据库为你自己的数据库即可运行<br/>
+ 项目使用了Lombok,建议使用idea查看代码。安装lombok插件<br/>
  swagger可以做快速测试及API文档生成，运行成功访问(http://localhost:8080/swagger-ui.html#/)<br/>
  redis需要你在application-dev.yml配置你自己的redis地址以及账号密码<br/>
  checkstyle做代码质量检查，只需要运行 gradle check即可查看代码检查情况，也可以自定义规则修改checkstyle.xml即可<br/>
