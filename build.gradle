@@ -56,6 +56,7 @@ dependencies {
     compile('org.postgresql:postgresql')//postgresql驱动
     compile('io.springfox:springfox-swagger2:2.8.0')//swagger2 可制作api文档，可替代postman调试
     compile('io.springfox:springfox-swagger-ui:2.8.0')//swagger2 可制作api文档，可替代postman调试
+    compile('org.apache.rocketmq:rocketmq-client:4.3.0')//rocketmq
 
 
 }
