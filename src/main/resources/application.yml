@@ -7,7 +7,15 @@ spring:
     active: dev
   datasource:  #数据库配置
 
-
+#rocketmq
+apache:
+  rocketmq:
+    consumer:
+      pushConsumer: ZzPushConsumer
+    producer:
+      producerGroup: Zz
+    namesrvAddr: 127.0.0.1:9876
+    
 mybatis:
   configuration:
      #配置项：开启下划线到驼峰的自动转换. 作用：将数据库字段根据驼峰规则自动注入到对象属性。
