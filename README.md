@@ -9,6 +9,7 @@
  多数据源切换支持了Mysql，Oracle，PostgreSQL。<br/>
  日志管理使用log4j2，做了平台，业务，异常，运行，数据库切割。可自行定义log4j2-dev.yml，log4j2-prod.yml<br/>
  异常管理做了一些封装，可自行扩展<br/>
+ 增加了对rocketmq的支持，可自行扩展<br/>
  项目参考了网上一些不错的做法，永远感谢那些依然愿意免费分享的人<br/>
  项目结构如下<br/>
  ```
@@ -35,7 +36,8 @@
     │   │           ├── controller
     │   │           │   ├── AccountController.java
     │   │           │   ├── ExceptionTestController.java
-    │   │           │   └── RedisTestController.java
+    │   │           │   ├── RedisTestController.java
+    │   │           │   └── RocketMQTestController.java
     │   │           ├── dbconfig
     │   │           │   ├── DataSourceContextHolder.java
     │   │           │   ├── DataSourceType.java
@@ -60,6 +62,9 @@
     │   │           │   ├── IRedisService.java
     │   │           │   ├── RedisConfig.java
     │   │           │   └── RedisServiceImpl.java
+    │   │           ├── rocketmq
+    │   │           │   ├── Consumer.java
+    │   │           │   └── Producer.java
     │   │           ├── service
     │   │           │   ├── IAccountService.java
     │   │           │   └── impl
