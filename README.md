@@ -6,7 +6,7 @@
 ![database](https://img.shields.io/badge/database-mysql-brightgreen.svg)
 ![database](https://img.shields.io/badge/database-oracle-brightgreen.svg)
 ![database](https://img.shields.io/badge/database-postgresql-brightgreen.svg)
-![download](https://img.shields.io/badge/download-600k-yellow.svg)
+![download](https://img.shields.io/badge/download-2.7M-yellow.svg)
 
  基于gradle构建，主体框架为springboot2.0.2<br/>
  项目未包含数据库表，只需要按照Account实体类去新建表，修改application-dev.yml数据库为你自己的数据库即可运行<br/>
